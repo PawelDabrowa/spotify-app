@@ -1,0 +1,145 @@
+
+body {
+	background-image:url('http://localhost:3000/images/music.jpg');
+	font-size: 20px;
+}
+
+/*search container*/
+#container{
+	background-color: #fff;
+	width: 480px;
+	padding: 50px;
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	-webkit-box-shadow: 3px 3px 30px 0px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 0px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 0px rgba(204,204,204,0.9);
+}
+
+/*Your album box*/
+#wrap{
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+	opacity: 0.9;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+/*Your album div*/
+.content{
+	padding: 20px;
+}
+
+/*Input Serach*/
+input[type=search]{
+	width: 60%;
+	background-color: #efefef;
+	color: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box - sizing: border-box;
+	outline: none;
+}
+
+input[type=search]:focus{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	backgroud-color: #e9f3e9;
+	color: #428c42;
+}
+
+/*Input Submit*/
+ input[type=submit]{
+	 width: 150px;
+	 background-color: #1abc9c;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 12px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+ }
+ 
+ input[type=submit]:hover{
+	 background-color: #47c9af;
+ }
+ 
+ input[type=search]::-webkit-input-placeholder{
+	 color: #1abc9c;
+ }
+ 
+ /*Firefox <19*/
+input[type=search]:-moz-placeholder{
+	 color: #1abc9c;
+ }
+ 
+ /*Firefox >19*/
+ input[type=search]::-moz-placeholder{
+	 color: #1abc9c;
+ }
+ 
+ /*Internet Explorer 10*/
+ input[type=search]:-ms-input-placeholder{
+	 color: #1abc9c;
+ }
+  /* --------------------Mobile responsiv-------------------------- */
+   /* Mobile-first */
+@media all and (max-width: 24em) {
+    input[type=search]{
+		display:inline;
+	min-width: 260px;
+	margin-left:auto;
+    margin-right:auto;
+    }
+}
+ 
+/* Mobile-first */
+@media all and (max-width: 24em) {
+    input[type=submit]{
+    float: none;
+	margin-top:10px;
+	width: 265px;
+    }
+}
+
+/* Mobile-first*/
+@media all and (max-width: 24em) {
+    #container {
+     padding: 20px;
+     width:260px;
+	margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    }
+}
+
+/* Mobile-first*/
+@media all and (max-width: 24em) {
+    #wrap{
+     padding: 20px;
+     width:260px;
+	margin-top:20px;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    }
+}
+
+
+
+
+
+

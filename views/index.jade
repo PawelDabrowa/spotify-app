@@ -1,0 +1,19 @@
+html
+  head
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  body
+    // search container
+    #container
+      h2 Spotify App
+      p Use the Spotify app to browse your favorite album.
+      // search input
+      form(action='/search', method='GET')
+        input(type='search', placeholder='Start typing...', onfocus="this.placeholder=' ' ", onblur="this.placeholder='Start typing...' ", name='q', value='')
+        // submit input
+        input(type='submit', value='Search', <='', input='')
+    // content from search
+    #wrap
+      .content
+        h2 Your albums 
+          
+
