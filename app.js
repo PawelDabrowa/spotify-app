@@ -24,7 +24,7 @@ spotifyApi.searchArtists('music')
   }, function(err) {
     console.error(err);
   });
-  
+  /*----------------------------------web socket routing-------------------*/
  /* 
   var WebSocket = require('ws').Server;
   var wss = new WebSocketServer({port:3000});
