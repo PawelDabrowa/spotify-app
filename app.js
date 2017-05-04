@@ -17,22 +17,27 @@ var SpotifyWebApi = require('spotify-web-api-node');
 
 var spotifyApi = new SpotifyWebApi();
 
-var artistId = 'id';
-
 // Passing a callback
-spotifyApi.getArtistAlbums(artistId, {limit: 10, offset: 20})
+spotifyApi.searchArtists('music')
   .then(function(data) {
-    console.log('Album information', data.body);
+    console.log('Search artists by "Love"', data.body);
   }, function(err) {
     console.error(err);
   });
   
-  app.get('/', function (req, res, next) {
-search(req.query.q, function (err, getArtistAlbums) {
-if (err) return next(err);
-res.render(title = 'id');
-	});
-});
+ /* 
+  var WebSocket = require('ws').Server;
+  var wss = new WebSocketServer({port:3000});
+  
+  wss.on('connection', function(ws){
+	  ws.on('message', function(message){
+		  wss.clients.forEach(function(client){
+			  client.send(message);
+			  
+		  });
+	  })
+  });
+  */
 
-
+  
 app.listen(3000);

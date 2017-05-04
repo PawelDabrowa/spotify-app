@@ -8,12 +8,19 @@ html
       p Use the Spotify app to browse your favorite album.
       // search input
       form(action='/search', method='GET')
-        input(type='search', placeholder='Start typing...', onfocus="this.placeholder=' ' ", onblur="this.placeholder='Start typing...' ", name='q', value='')
+        input#message(type='search', placeholder='Start typing...', onfocus="this.placeholder=' ' ", onblur="this.placeholder='Start typing...' ", name='q', value='')
         // submit input
-        input(type='submit', value='Search', <='', input='')
+        input#message(type='submit', value='Search', <='', input='')
     // content from search
     #wrap
       .content
         h2 Your albums 
-          
-
+        script.
+          var ws = new WebSocket('ws://localhost:3000');
+          ws.onmessage = function(msg{
+          })
+          document.forms[0].onsubmit = function(ev){
+          ev.preventDefault();
+          var input = document.getElementById('message');
+          ws.send(input.value);
+          }
