@@ -20,7 +20,7 @@ var spotifyApi = new SpotifyWebApi();
 // Passing a callback
 spotifyApi.searchArtists('music')
   .then(function(data) {
-    console.log('Search artists by "Love"', data.body);
+    console.log(data.body);
   }, function(err) {
     console.error(err);
   });
