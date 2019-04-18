@@ -1,3 +1,3 @@
 # spotify-app
-Spotify app to browse music albums.
+The app created with node.js, allow to searching a music albums from spotify.
 
